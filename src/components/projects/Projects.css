@@ -1,0 +1,78 @@
+.section--projects {
+    background-color: var(--clr-dark);
+    
+    text-align: center; /* Because it's the only text we have */
+}
+
+.section__title--projects {
+    color: var(--clr-accent);
+}
+
+.section__subtitle--projects {
+    color: var(--clr-light);
+}
+.section__subtitle--projects::after {
+    content: '';
+    display: block;
+    width: 5em;
+    height: 1px;
+    margin: 1em auto 1.5em;
+    background: var(--clr-light);
+    opacity: 0.25em;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* number of columns */
+    /* max-width: 0 auto */
+}
+
+.project-container {
+    position: relative;
+    background-color: var(--clr-accent);   
+    overflow: hidden; 
+}
+
+.project:hover .project__img {
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+.project__title {
+    color: white;
+    background-color: var(--clr-dark);
+    text-align: right;
+
+    padding: 0.1em 1em 0.1em 0.2em;
+
+    /* Keep at bottom right */
+    position: absolute;
+    bottom: 15%;
+    right: 0px;
+}
+
+.project__tools {
+    color: white;
+    background-color: var(--clr-dark);
+    padding: 0.1em 1em 0.1em 0.3em;
+    position: absolute;
+    bottom: 0px;
+    right: 0px
+}
+
+.project__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+
+
+.project:focus .portfolio__img {
+    transform: scale(1.2);
+    opacity: .5;
+}

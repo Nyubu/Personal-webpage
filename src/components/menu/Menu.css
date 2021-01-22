@@ -1,0 +1,105 @@
+
+.menu {    
+    font-family: "Nunito Sans", sans-serif;
+    align-self: left;
+    margin-top: 2em;
+}
+
+/* Tab styling */
+
+.tab-content > .tab-pane {
+    display: none;
+}
+
+.tab-content > .active {
+    display: block;
+}
+
+.nav {
+    display: flex;      
+    background-color: var(--clr-dark); 
+
+    
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .tab-content {
+    padding-top: 60px;
+  }
+  
+
+.nav-link {
+    padding: 0;
+    display: flex;
+    margin-right: 8px;
+}
+
+.nav-link:hover, .nav-link:focus {
+    text-decoration: none;    
+}
+
+.nav-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+}
+
+.nav-tabs {    
+    
+    justify-content: center;
+    
+    
+}
+
+
+.nav-tabs .nav-item {
+    color: white; /*color of the tabs fonts*/
+    font-weight: bold;
+    padding: 0.5em 1em 0.5em 1em;
+
+}
+
+
+.nav-tabs .nav-link {
+    text-decoration: none; /* no underline*/
+
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color: black; /*when you click on them the color of the border*/
+    background-color: var(--clr-dark);
+
+    -webkit-transition: -webkit-transform .5s ease;
+    -webkit-transform: scale(1.1,1.1);
+}
+
+.nav-tabs .nav-link.disabled { /*disabled */
+    color: #6c757d;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-color: var(--clr-accent); /*when u cick on them */
+
+    transform: scale(1.1);
+
+    color: black;
+    border-radius: 0px;
+    border-color: black;    
+}
+
+.nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    
+}

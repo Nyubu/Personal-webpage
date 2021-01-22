@@ -1,0 +1,214 @@
+.blog {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./tools-bg.jpg);
+    background-color: white;    
+    text-decoration: none;
+}
+
+.section__title--blog {
+    color: var(--clr-accent);
+
+    text-align: center;
+    max-width: 800px; /* adjust text width */ 
+    margin: 0 auto; /* keeps it centered */
+
+    color: var(--clr-accent);
+    position: relative;
+}
+.section__subtitle--blog > a {
+    color: var(--clr-light);    
+    text-decoration: none;
+    text-align: center;
+}
+
+.blog__profile-link-container {
+    text-align: center;
+    max-width: 300px; /* adjust text width */ 
+    margin: 1em auto; /* keeps it centered */    
+    
+}
+
+.blog__profile-author-link:hover {
+    text-decoration: underline;
+}
+
+.blog__profile-avatar {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 150ms linear;
+     
+}
+
+.blog__profile-avatar:hover {
+    transform: scale(1.3);
+}
+
+.blog__profile-link,
+.blog__profile-avatar {
+    border-radius: 50%;  
+    display: block;
+    margin: 0 auto 0.5em;
+    height: 65px;
+    width: 65px;
+    text-decoration: none;
+}
+
+.blog__profile-link-container::after {
+    content: '';
+    display: block;
+    width: 5em;
+    height: 1px;
+    margin: 1em auto 2em;
+    background: var(--clr-light);
+    opacity: 0.25em;
+}
+
+/* -------- BLOG POSTS --------- */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-column: 4;
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+    justify-items: center;
+}
+
+.blog-post__link {
+    text-decoration: none;
+}
+
+.blog-post {
+    position: relative;
+    border-radius: 25px;
+    height: 325px;
+    min-width: 400px;
+    max-width: 400px;
+    background-color: rgb(0,0,0, 0.8);   
+    box-shadow: 5px 10px rgb(0,0,0, 0.3);
+
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 150ms linear;
+}
+
+
+.blog-post:hover {
+    -webkit-transition: -webkit-transform .5s ease;
+    -webkit-transform: scale(1.05,1.05);
+
+    
+}
+
+.blog-post__header {
+    display: flex;
+    padding: 20px 20px 0px 20px;
+}
+
+
+.blog-post__thumbnail-container {
+    border-radius: 15px;
+    margin: 0 auto;
+    height: 100px; 
+    width: 100px; 
+    overflow: hidden;
+}
+.blog-post__thumbnail {
+    
+}
+.blog-post__title {
+    margin: 0 auto;
+    width: 70%;
+    padding-left: 1em;
+    color: var(--clr-accent);
+    text-align: center;
+}
+.blog-post__content {
+    position: relative;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+
+    
+}
+.blog-post__content::after {    
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25em;
+}
+
+.calendar-icon {
+    margin-right: 0.3em;
+    margin-bottom: 0.1em;
+}
+
+.blog-post__date {    
+    line-height: 1.5;
+    color: white;
+    position: absolute;
+    bottom: 0.25em;
+    left: 2em;
+}
+
+/* ---------- BLOG PAGINATION ------- | Documentation: https://www.npmjs.com/package/react-paginate */
+.blog-pagination {    
+    font-size: var(--fs-h3);    
+    margin: 3em auto 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    outline: none; 
+
+    user-select: none;
+}
+.blog-pagination > li > a { /* Unactive buttons */  
+    
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+    
+}
+.blog-pagination__prev { /* Prev Button */
+    border-radius: 5px;
+    margin-right: 0.5em;
+    background-color: var(--clr-dark);
+    border-color: var(--clr-accent);
+    color: white;
+}
+.blog-pagination__prev { 
+    
+}
+.blog-pagination__prev:hover { /* Hovering over next button */
+    background-color: var(--clr-accent) ;
+    
+}
+.blog-pagination__next { /* Next Button */
+    border-radius: 5px;
+    background-color: var(--clr-dark);
+    border-color: var(--clr-accent);
+    color: white;
+}
+.blog-pagination__next:hover { /* Hovering over next button */
+    background-color: var(--clr-accent);    
+}
+.blog-pagination > .active  { /* Active page */
+    border-radius: 5px;
+    background-color: var(--clr-accent) ;
+    border-color: var(--clr-accent) ;
+    color: black;
+}
+.blog-pagination__page-link { /* Pages */
+    border-radius: 5px;
+    background-color: var(--clr-dark);
+    margin-right: 0.5em;
+    color: white;
+}
+.blog-pagination__page-link:hover { /* Hovering over pages */
+    background-color: var(--clr-accent) ;    
+}
+.blog-pagination > li > a, .blog-pagination > li > span {
+    
+}

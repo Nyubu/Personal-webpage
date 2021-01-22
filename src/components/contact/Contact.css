@@ -1,0 +1,122 @@
+.contact {
+    background-color: var(--clr-dark);
+}
+
+.section__title--contact {
+    color: var(--clr-accent);
+    text-align: center;
+}
+
+.contact-form__title {
+    text-align: center;
+    font-size: var(--fs-h3);  
+    color: white;
+}
+
+.section__title--contact::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 0em;
+    background: var(--clr-light);
+    opacity: 0.25em;
+}
+
+.contact-container {
+    margin-top: 2.5em;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* number of columns */
+    border: 2px solid red;
+}
+
+        /* ------ CONTACT FORM ------ */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 1em;
+    border: 2px solid blue;
+}
+
+.contact-form__text {
+    margin: 2em;
+}
+
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    resize: none;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.contact-form__submit-btn {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 50%;
+    color: black;
+    background-color: var(--clr-accent);
+    font-weight: bold;
+}
+
+.contact-form__submit-btn:hover {
+    transform: scale(1.01);
+}
+
+        /* ------ CONTACT LIST ------ */
+.contact-list {
+    border: 2px solid blue;
+    list-style: none;
+    display: grid;
+    padding: 2em;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin: 0 auto;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+.contact-link:hover {
+    transform: scale(1.01);
+}
+
+
+.contact-logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 1em;
+    border-radius: 8px;
+}
+
+.contact-name {
+    width: 100px;
+    font-size: var(--fs-h3);
+    font-weight: bold;
+    color: black; 
+}
