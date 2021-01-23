@@ -2,7 +2,6 @@ import React from 'react';
 import './Contact.css';
 import axios from 'axios';
 
-import mediumLogo from './logos/medium-logo.png';
 import githubLogo from './logos/github-logo.png';
 import linkedinLogo from './logos/linkedin-logo.png';
 import pinterestLogo from './logos/pinterest-logo.png';
@@ -114,6 +113,21 @@ class Contact extends React.Component {
             </form>
 
             <div className="contact-list">
+                <ul className="contacts">
+                    <li className="contact-item">
+                        <i className="fab fa-discord"></i>
+                        <p className="contact-info"> Paper Moon#2062</p>
+                    </li>
+                    <li className="contact-item">
+                        <i className="fas fa-mobile-alt"></i>
+                        <p className="contact-info">(469) 583-5851</p>
+                    </li>
+                    <li className="contact-item">
+                        <i className="fas fa-envelope"></i>
+                        <p className="contact-info">huynh5851@gmail.com</p>
+                    </li>
+                </ul>
+
                 <div className="contact-list-wrapper">
                     <a  className="contact-link" href="https://youtube.com" target="blank">    
                         <img src={youtubeLogo} className="contact-logo" alt="something"/>
