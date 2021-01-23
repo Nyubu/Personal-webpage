@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import axios from 'axios';
 
 import mediumLogo from './logos/medium-logo.png';
 import githubLogo from './logos/github-logo.png';
@@ -22,18 +23,48 @@ class Contact extends React.Component {
       this.handleSubmit = this.handleSubmit.bind(this);
     }
   
+    // Handle changes in input fields
     handleChange(event) {
         this.setState({
             [event.target.name]: event.target.value});
+    }  
+
+    // Reset form of controlled component
+    resetForm() {
+        this.setState({
+            messengerName: '',
+            contact: '',
+            subject: '',
+            message: ''
+        });
     }
-  
-    handleSubmit(event) {
-        alert('Thanks! Your message has been sent to my email. If you left your contact information')
-    //   alert('The form has been submitted: ' + 
-    //             this.state.messengerName + '/' +
-    //             this.state.contact + '/' +
-    //             this.state.message);
-      event.preventDefault();
+
+    // Handle when user clicks submit button
+    handleSubmit(event){
+
+        event.preventDefault();
+        const { messengerName,  contact, subject, message } = this.state;
+
+        // Send data express backend
+        axios({
+            method: "POST", 
+            url:"http://localhost:3000/express_backend",
+            headers: { 'Content-Type': 'application/json' },
+            data: JSON.stringify({
+                messengerName,  
+                contact, 
+                subject, 
+                message 
+            })
+        }).then((response)=>{
+            if (response.data.msg === 'success'){
+                alert(
+                    "Thanks! Your message has been sent to my email. If you left any contact information, I'll be sure to reach out to you shortly."); 
+                this.resetForm();
+            }else if(response.data.msg === 'fail'){
+                alert("Oops, something went wrong. Try again")
+            }
+        })
     }
   
     render() {
@@ -77,37 +108,34 @@ class Contact extends React.Component {
                     name="message" 
                     value={this.state.message} 
                     onChange={this.handleChange} 
-                >
-                    
+                >                    
                 </textarea>
                 <input className="contact-form__submit-btn" type="submit" value="Send Message" />
             </form>
+
             <div className="contact-list">
-                <div></div>
-                <a  className="contact-link" href="https://youtube.com" target="blank">    
-                    <img src={youtubeLogo} className="contact-logo" alt="something"/>
-                    <p className="contact-name">Youtube</p>
-                </a>
-                <a  className="contact-link" href="https://linkedin.com" target="blank">
-                    <img src={linkedinLogo} className="contact-logo" alt="linkedin logo"/>
-                    <p className="contact-name">Linkedin</p>
-                </a>
-                <a  className="contact-link" href="https://twitter.com" target="blank">
-                    <img src={twitterLogo} className="contact-logo" alt="twitter logo"/>
-                    <p className="contact-name">Twitter</p>
-                </a>
-                <a  className="contact-link" href="https://medium.com" target="blank">
-                    <img src={mediumLogo} className="contact-logo" alt="medium logo"/>
-                    <p className="contact-name">Medium</p>
-                </a>
-                <a  className="contact-link" href="https://pinterest.com" target="blank">
-                    <img src={pinterestLogo} className="contact-logo" alt="pinterest logo"/>
-                    <p className="contact-name">Pinterest</p>
-                </a>
-                <a  className="contact-link" href="https://github.com" target="blank">
-                    <img src={githubLogo} className="contact-logo" alt="github logo"/>
-                    <p className="contact-name">Github</p>
-                </a>
+                <div className="contact-list-wrapper">
+                    <a  className="contact-link" href="https://youtube.com" target="blank">    
+                        <img src={youtubeLogo} className="contact-logo" alt="something"/>
+                        <p className="contact-name">Youtube</p>
+                    </a>
+                    <a  className="contact-link" href="https://linkedin.com" target="blank">
+                        <img src={linkedinLogo} className="contact-logo" alt="linkedin logo"/>
+                        <p className="contact-name">Linkedin</p>
+                    </a>
+                    <a  className="contact-link" href="https://twitter.com" target="blank">
+                        <img src={twitterLogo} className="contact-logo" alt="twitter logo"/>
+                        <p className="contact-name">Twitter</p>
+                    </a>
+                    <a  className="contact-link" href="https://pinterest.com" target="blank">
+                        <img src={pinterestLogo} className="contact-logo" alt="pinterest logo"/>
+                        <p className="contact-name">Pinterest</p>
+                    </a>
+                    <a  className="contact-link" href="https://github.com" target="blank">
+                        <img src={githubLogo} className="contact-logo" alt="github logo"/>
+                        <p className="contact-name">Github</p>
+                    </a>
+                </div>
             </div>
 
         </div>
