@@ -54,12 +54,6 @@ function Menu() {
                     
                 </Tab>
 
-                <Tab eventKey="Hobby" title="Hobby">
-
-                    <Introduction />   
-                    
-                </Tab>
-
                 <Tab eventKey="contact" title="Contact">
 
                     <Contact />   

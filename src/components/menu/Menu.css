@@ -17,32 +17,15 @@
 
 .nav {
     display: flex;      
-    background-color: var(--clr-dark); 
-
-    
+    justify-content: center;
+    background-color: var(--clr-dark);   
 }
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .tab-content {
-    padding-top: 60px;
-  }
-  
 
 .nav-link {
     padding: 0;
-    display: flex;
     margin-right: 8px;
-}
-
-.nav-link:hover, .nav-link:focus {
-    text-decoration: none;    
+    width: 100px;
+    text-align: center;
 }
 
 .nav-link.disabled {
@@ -51,33 +34,41 @@
     cursor: default;
 }
 
-.nav-tabs {    
-    
-    justify-content: center;
-    
-    
-}
-
-
 .nav-tabs .nav-item {
     color: white; /*color of the tabs fonts*/
     font-weight: bold;
     padding: 0.5em 1em 0.5em 1em;
-
+    position: relative;
 }
 
 
 .nav-tabs .nav-link {
     text-decoration: none; /* no underline*/
-
+    transition: transform 100ms ease-in-out;
 }
 
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+.nav-link:hover, .nav-link:focus {
     border-color: black; /*when you click on them the color of the border*/
     background-color: var(--clr-dark);
 
-    -webkit-transition: -webkit-transform .5s ease;
-    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1);
+}
+
+.nav-link::after { /* Accent underneath */
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: var(--clr-accent);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 .nav-tabs .nav-link.disabled { /*disabled */
@@ -93,7 +84,6 @@
     transform: scale(1.1);
 
     color: black;
-    border-radius: 0px;
 }
 
 .nav-tabs .dropdown-menu {
