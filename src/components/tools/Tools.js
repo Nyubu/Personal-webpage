@@ -17,9 +17,7 @@ function Tools() {
             <h2 className="section__subtitle section__subtitle--tools">Languages</h2>   
             <div className="tools">
                 <div className="tool">                    
-                    <div className="tool__img-container">
-                        <img className="tool__img" src={java_logo} alt="java logo" />
-                    </div>
+                    <img className="tool__img" src={java_logo} alt="java logo" />
                     <h3 className="tool-title">Java</h3>
                     <p className="tool-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -27,9 +25,7 @@ function Tools() {
                     consequat.</p>
                 </div>
                 <div className="tool">
-                    <div className="tool__img-container">
-                        <img className="tool__img" src={python_logo} alt="python logo" />
-                    </div>
+                    <img className="tool__img" src={python_logo} alt="python logo" />
                     <h3 className="tool-title">Python3</h3>
                     <p className="tool-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -37,9 +33,7 @@ function Tools() {
                     consequat.</p>
                 </div>
                 <div className="tool">
-                    <div className="tool__img-container">
-                        <img className="tool__img" src={python_logo} alt="python logo" />
-                    </div>
+                    <img className="tool__img" src={python_logo} alt="python logo" />
                     <h3 className="tool-title">Python3</h3>
                     <p className="tool-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -47,9 +41,7 @@ function Tools() {
                     consequat.</p>
                 </div>
                 <div className="tool">
-                    <div className="tool__img-container">
-                        <img className="tool__img" src={python_logo} alt="python logo" />
-                    </div>
+                    <img className="tool__img" src={python_logo} alt="python logo" />
                     <h3 className="tool-title">Python3</h3>
                     <p className="tool-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -60,9 +52,7 @@ function Tools() {
             <h2 className="section__subtitle section__subtitle--tools">Databases</h2> 
             <div className="tools">
                 <div className="tool">
-                    <div className="tool__img-container">
-                        <img className="tool__img" src={mongoDB_logo} alt="mongodb logo" />
-                    </div>
+                    <img className="tool__img" src={mongoDB_logo} alt="mongodb logo" />
                     <h3 className="tool-title">MongoDB</h3>
                     <p className="tool-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -70,9 +60,7 @@ function Tools() {
                     consequat.</p>
                 </div>
                 <div className="tool">
-                    <div className="tool__img-container">
-                        <img className="tool__img" src={postgres_logo} alt="postgres logo" />
-                    </div>
+                    <img className="tool__img" src={postgres_logo} alt="postgres logo" />
                     <h3 className="tool-title">PostgreSQL</h3>
                     <p className="tool-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -83,9 +71,7 @@ function Tools() {
             <h2 className="section__subtitle section__subtitle--tools">Frameworks</h2> 
             <div className="tools">                    
                 <div className="tool">
-                    <div className="tool__img-container">
-                        <img className="tool__img" src={reactjs_logo} alt="reactjs logo" />
-                    </div>
+                    <img className="tool__img" src={reactjs_logo} alt="reactjs logo" />
                     <h3 className="tool-title">ReactJS</h3>
                     <p className="tool-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -93,9 +79,7 @@ function Tools() {
                     consequat.</p>
                 </div>
                 <div className="tool">
-                    <div className="tool__img-container">
-                        <img className="tool__img" src={flask_logo} alt="flask logo" />
-                    </div>
+                    <img className="tool__img" src={flask_logo} alt="flask logo" />
                     <h3 className="tool-title">Flask</h3>
                     <p className="tool-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -106,9 +90,7 @@ function Tools() {
             <h2 className="section__subtitle section__subtitle--tools">Frameworks</h2> 
             <div className="tools">                    
                 <div className="tool">
-                    <div className="tool__img-container">
-                        <img className="tool__img" src={postman_logo} alt="postman logo" />
-                    </div>
+                    <img className="tool__img" src={postman_logo} alt="postman logo" />
                     <h3 className="tool-title">Postman</h3>
                     <p className="tool-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 

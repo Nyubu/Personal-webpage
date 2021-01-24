@@ -21,8 +21,6 @@ function Menu() {
 
                 <Tab eventKey="home" title="Home">
 
-                <Notes />   
-
                     {/* My Services */}
                     <Services />
                     
