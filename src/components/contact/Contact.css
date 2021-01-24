@@ -1,16 +1,10 @@
 .contact {
-    background-color: var(--clr-dark);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./contact-bg.jpg);
 }
 
 .section__title--contact {
     color: var(--clr-accent);
     text-align: center;
-}
-
-.contact-form__title {
-    text-align: center;
-    font-size: var(--fs-h3);  
-    color: white;
 }
 
 .section__title--contact::after {
@@ -27,8 +21,7 @@
     margin-top: 2.5em;
     border-radius: 15px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* number of columns */
-    border: 2px solid red;
+    grid-template-columns: repeat(auto-fit, minmax(675px, 1fr)); /* number of columns */
 }
 
         /* ------ CONTACT FORM ------ */
@@ -36,8 +29,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 1em;
-    border: 2px solid blue;
+    margin: 0 2em;
+    padding-bottom: 1.25em;
+    background-color: rgb(0,0,0, 0.6); 
+    border-radius: 25px;
+}
+
+.contact-form__title {
+    text-align: center;
+    font-size: var(--fs-h3);  
+    font-weight: bold;
+    color: white;
+}
+.contact-form__title::after {
+    content: '';
+    display: block;
+    width: 5em;
+    height: 1px;
+    margin: 0.5em auto 0em;
+    background: var(--clr-light);
+    opacity: 0.25em;
 }
 
 .contact-form__text {
@@ -49,32 +60,46 @@ input[type=text], select {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    border-color: transparent;
+    color: white;
+    background-color: transparent;
+    border-bottom: 3px solid rgb(255,255,255, 0.6); 
 }
 
+input::placeholder {
+    color: rgb(255,255,255, 0.6); 
+}
 textarea {
     width: 80%;
     height: 150px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 4px; 
+    border:1px solid transparent;
+    border-bottom: 5px solid rgb(255,255,255, 0.6); 
     box-sizing: border-box;
+    background-color: transparent;
 
+    color: white;
     resize: none;
     max-width: 100%;
     max-height: 300px;
+}
+
+textarea::placeholder {
+    color: rgb(255,255,255, 0.6); 
 }
 
 .contact-form__submit-btn {
     display: block;
     margin: 0 auto;
     height: 40px;
-    width: 50%;
+    width: 25%;
     color: black;
+    box-sizing: border-box;
+    border:1px solid transparent;
     background-color: var(--clr-accent);
     font-weight: bold;
 }
@@ -86,30 +111,25 @@ textarea {
         /* ------ CONTACT LIST ------ */
 .contact-list {
     border-radius: 25px;
-    border: 2px solid green;
     margin: 0 2em;
-    padding: 2em;    
-    background-color: rgb(0,0,0, 0.8); 
+    padding: 0 2em;    
+    background-color: rgb(0,0,0, 0.6); 
 }
 
-@media(min-width: 800px) {
-
-    .contacts {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        border: 2px solid blue;
-    }
+.contacts {
+    margin-top: 0;
+    padding: 1em;;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(255,255,255, 0.6);    
 }
-    
 
 .contact-item {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    border: 2px solid white;
-    width: 30%;
+    width: 33%;
 }
 
 .contact-info {
@@ -118,10 +138,11 @@ textarea {
     font-weight: bold;
 }
 
-
 .contact-list-wrapper {
-    padding: 0;
-    
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* number of columns */
+    gap: 20px;
 }
 
 .contact-link {
@@ -129,15 +150,12 @@ textarea {
     justify-content: center;
     align-items: center;
 
-    background-color: white;
-    margin: 0 auto;
+    background-color: var(--clr-dark);
     text-decoration: none;
-    border:2px solid black;
 }
 
 .contact-link:hover {
     transform: scale(1.01);
-    background-color: black;
     color: var(--clr-accent);
 }
 
@@ -153,5 +171,5 @@ textarea {
     width: 100px;
     font-size: var(--fs-h3);
     font-weight: bold;
-    color: black; 
+    color: white;
 }

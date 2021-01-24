@@ -111,7 +111,7 @@ class Contact extends React.Component {
                 </textarea>
                 <input className="contact-form__submit-btn" type="submit" value="Send Message" />
             </form>
-
+            
             <div className="contact-list">
                 <ul className="contacts">
                     <li className="contact-item">
@@ -127,23 +127,22 @@ class Contact extends React.Component {
                         <p className="contact-info">huynh5851@gmail.com</p>
                     </li>
                 </ul>
-
                 <div className="contact-list-wrapper">
                     <a  className="contact-link" href="https://youtube.com" target="blank">    
                         <img src={youtubeLogo} className="contact-logo" alt="something"/>
                         <p className="contact-name">Youtube</p>
                     </a>
-                    <a  className="contact-link" href="https://linkedin.com" target="blank">
-                        <img src={linkedinLogo} className="contact-logo" alt="linkedin logo"/>
-                        <p className="contact-name">Linkedin</p>
+                    <a  className="contact-link" href="https://pinterest.com" target="blank">
+                        <img src={pinterestLogo} className="contact-logo" alt="pinterest logo"/>
+                        <p className="contact-name">Pinterest</p>
                     </a>
                     <a  className="contact-link" href="https://twitter.com" target="blank">
                         <img src={twitterLogo} className="contact-logo" alt="twitter logo"/>
                         <p className="contact-name">Twitter</p>
                     </a>
-                    <a  className="contact-link" href="https://pinterest.com" target="blank">
-                        <img src={pinterestLogo} className="contact-logo" alt="pinterest logo"/>
-                        <p className="contact-name">Pinterest</p>
+                    <a  className="contact-link" href="https://linkedin.com" target="blank">
+                        <img src={linkedinLogo} className="contact-logo" alt="linkedin logo"/>
+                        <p className="contact-name">Linkedin</p>
                     </a>
                     <a  className="contact-link" href="https://github.com" target="blank">
                         <img src={githubLogo} className="contact-logo" alt="github logo"/>
