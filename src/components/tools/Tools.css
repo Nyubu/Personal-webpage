@@ -60,6 +60,31 @@
     align-items: center;
 }
 
+.tool[data-tool-tip] {
+    
+    position: relative;
+}
+
+.tool[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    position: absolute;
+    display: block;
+    background-color: var(--clr-dark);
+    color: white;
+    border-radius: 7px;
+    padding: 1em 1.5em;
+    bottom: 0;
+    transform: scale(0);
+    transition: 
+        transform ease-out 175ms,
+        bottom ease-out 175ms;
+}
+
+.tool[data-tool-tip]:hover::after {
+    transform: scale(1);
+    bottom: 100%;
+}
+
 .tool__name {
     color: white;
     font-weight: bold;

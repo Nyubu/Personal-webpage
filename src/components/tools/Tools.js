@@ -25,7 +25,7 @@ function Tools() {
             <div className="tools-wrapper">
                 <h2 className="section__subtitle section__subtitle--tools">Languages</h2>   
                 <div className="tools tools-languages">
-                    <div className="tool">
+                    <div className="tool" data-tool-tip="Java tool tip">
                         <div className="tool__img-wrapper">
                             <img className="tool__img" src={java_logo} alt="java logo" />
                         </div>
