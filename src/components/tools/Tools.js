@@ -48,37 +48,42 @@ function Tools() {
                         <p className="tool__name">Tool Name</p>
                     </div>
                 </div>
-            
-                <h2 className="section__subtitle section__subtitle--tools">Databases</h2> 
-                <div className="tools tools-databases">
-                    <div className="tool">
-                        <div className="tool__img-wrapper">
-                            <img className="tool__img" src={mongoDB_logo} alt="mongodb logo" />
-                        </div>                        
-                        <p className="tool__name">MongoDB</p>
-                    </div>
-                    <div className="tool">
-                        <div className="tool__img-wrapper">
-                            <img className="tool__img" src={postgres_logo} alt="postgres logo" />
+                <div className="tools-row">
+                    <div className="databases-wrapper">
+                        <h2 className="section__subtitle section__subtitle--tools">Databases</h2> 
+                        <div className="tools tools-databases">
+                            <div className="tool">
+                                <div className="tool__img-wrapper">
+                                    <img className="tool__img" src={mongoDB_logo} alt="mongodb logo" />
+                                </div>                        
+                                <p className="tool__name">MongoDB</p>
+                            </div>
+                            <div className="tool">
+                                <div className="tool__img-wrapper">
+                                    <img className="tool__img" src={postgres_logo} alt="postgres logo" />
+                                </div>
+                                <p className="tool__name">Postgres</p>
+                            </div>
                         </div>
-                        <p className="tool__name">Postgres</p>
                     </div>
+                    <div className="frameworks-wrapper">
+                        <h2 className="section__subtitle section__subtitle--tools">Frameworks</h2> 
+                        <div className="tools tools-frameworks">                    
+                            <div className="tool">
+                                <div className="tool__img-wrapper">
+                                    <img className="tool__img" src={react_logo} alt="reactjs logo" />
+                                </div>
+                                <p className="tool__name">ReactJS</p>
+                            </div>
+                            <div className="tool">
+                                <div className="tool__img-wrapper">
+                                    <img className="tool__img" src={flask_logo} alt="flask logo" />
+                                </div>
+                                <p className="tool__name">Flask</p>
+                            </div>
+                        </div>            
+                    </div>                
                 </div>
-                <h2 className="section__subtitle section__subtitle--tools">Frameworks and Libraries</h2> 
-                <div className="tools tools-frameworks">                    
-                    <div className="tool">
-                        <div className="tool__img-wrapper">
-                            <img className="tool__img" src={react_logo} alt="reactjs logo" />
-                        </div>
-                        <p className="tool__name">ReactJS</p>
-                    </div>
-                    <div className="tool">
-                        <div className="tool__img-wrapper">
-                            <img className="tool__img" src={flask_logo} alt="flask logo" />
-                        </div>
-                        <p className="tool__name">Flask</p>
-                    </div>
-                </div>            
                 <h2 className="section__subtitle section__subtitle--tools">Utility Programs</h2> 
                 <div className="tools tools-programs">                    
                     <div className="tool">
