@@ -94,8 +94,6 @@
 .blog-post:hover {
     -webkit-transition: -webkit-transform .5s ease;
     -webkit-transform: scale(1.05,1.05);
-
-    
 }
 
 .blog-post__header {
