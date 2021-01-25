@@ -31,8 +31,6 @@ function Services() {
                     consequat.</p>
                 </div> {/* service */}
             </div> {/* services -*/}
-
-            <a href="#work" className="btn">My work</a>
         </section>
     )
 }

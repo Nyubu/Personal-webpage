@@ -1,6 +1,8 @@
 import React from 'react'
 import './Tools.css'
 import java_logo from './tools-img/java-logo.png'
+import htmlcss_logo from './tools-img/htmlcss-logo.png'
+import javascript_logo from './tools-img/javascript-logo.png'
 import sql_logo from './tools-img/sql-logo.png'
 import mongoDB_logo from './tools-img/mongodb-logo.png'
 import postgres_logo from './tools-img/postgres-logo.png'
@@ -34,18 +36,24 @@ function Tools() {
                             <img className="tool__img" src={python_logo} alt="python logo" />
                         </div>
                         <p className="tool__name">Python</p>
+                    </div>                    
+                    <div className="tool">
+                        <div className="tool__img-wrapper">
+                            <img className="tool__img" src={javascript_logo} alt="javascript logo" />
+                        </div>
+                        <p className="tool__name">Javascript</p>
+                    </div>
+                    <div className="tool">
+                        <div className="tool__img-wrapper">
+                            <img className="tool__img" src={htmlcss_logo} alt="html/css logo" />
+                        </div>
+                        <p className="tool__name">HTML & CSS</p>
                     </div>
                     <div className="tool">
                         <div className="tool__img-wrapper">
                             <img className="tool__img" src={sql_logo} alt="sql logo" />
                         </div>
                         <p className="tool__name">SQL</p>
-                    </div>
-                    <div className="tool">
-                        <div className="tool__img-wrapper">
-                            <img className="tool__img" src={python_logo} alt="python logo" />
-                        </div>
-                        <p className="tool__name">Tool Name</p>
                     </div>
                 </div>
                 <div className="tools-row">
@@ -90,13 +98,13 @@ function Tools() {
                         <div className="tool__img-wrapper">
                             <img className="tool__img" src={vscode_logo} alt="postman logo" />
                         </div>
-                        <p className="tool__name">Visual Studio Code</p>
+                        <p className="tool__name">VS Code</p>
                     </div>
                     <div className="tool">
                         <div className="tool__img-wrapper">
                             <img className="tool__img" src={netbeans_logo} alt="netbeans logo" />
                         </div>
-                        <p className="tool__name">NetBeans IDE</p>
+                        <p className="tool__name">NetBeans</p>
                     </div>
                     <div className="tool">
                         <div className="tool__img-wrapper">
