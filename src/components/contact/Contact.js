@@ -63,7 +63,7 @@ class Contact extends React.Component {
             }else if(response.data.msg === 'fail'){
                 alert("Oops, something went wrong. Try again")
             }
-        })
+        }).catch(() => console.log("Can’t access API. Blocked by browser?"))
     }
   
     render() {
