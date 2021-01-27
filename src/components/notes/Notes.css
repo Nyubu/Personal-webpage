@@ -1,0 +1,32 @@
+.my-notes {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./notes-bg.png);
+    background-size: cover; */
+}
+
+.section__title--notes {
+    text-align: center;
+}
+
+.section__title--notes::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto;
+    background: var(--clr-dark);
+    opacity: 0.25em;
+}
+
+.section__subtitle--notes {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.notes {
+
+}
+
+.note-item {
+
+}
