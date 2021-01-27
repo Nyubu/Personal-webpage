@@ -1,11 +1,12 @@
+import React from 'react';
+import './Projects.css';
+
 import project_img1 from './projects-img/project_img1.jpg';
 import project_img2 from './projects-img/project_img2.jpg';
 import project_img3 from './projects-img/project_img3.jpg';
 import project_img4 from './projects-img/project_img4.jpg';
 import project_img5 from './projects-img/project_img5.jpg';
 import project_img6 from './projects-img/project_img6.jpg';
-import React from 'react';
-import './Projects.css';
 
 function Projects() {
 
