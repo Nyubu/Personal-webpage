@@ -4,8 +4,6 @@ import project_img3 from './projects-img/project_img3.jpg';
 import project_img4 from './projects-img/project_img4.jpg';
 import project_img5 from './projects-img/project_img5.jpg';
 import project_img6 from './projects-img/project_img6.jpg';
-import project_img7 from './projects-img/project_img7.jpg';
-import project_img8 from './projects-img/project_img8.jpg';
 import React from 'react';
 import './Projects.css';
 
@@ -64,22 +62,7 @@ function Projects() {
                         <p className="project__tools">HTML & CSS</p>   
                     </a>
                 </div>
-                {/* Portfolio item 07 */}
-                <div className="project-container">
-                    <a href="#" target="blank" className="project">
-                        <img src={project_img7} alt="" className="project__img"/>
-                        <h3 className="project__title">Project title</h3>
-                        <p className="project__tools">HTML & CSS</p>   
-                    </a>
-                </div>
-                {/* Portfolio item 08 */}
-                <div className="project-container">
-                    <a href="#" target="blank" className="project">
-                        <img src={project_img8} alt="" className="project__img"/>
-                        <h3 className="project__title">Project title</h3>
-                        <p className="project__tools">HTML & CSS</p>   
-                    </a>
-            </div></div>
+            </div>
         </section>
     )
 }
