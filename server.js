@@ -10,6 +10,10 @@ const PORT = process.env.PORT || 5000;
 // console.log that your server is up and running
 app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));
 
+app.get('/express_backend', function (req, res) {
+    res.send('Express server working!')
+  })
+
 // create a POST route
 app.post('/express_backend', (req, res) => {
     
