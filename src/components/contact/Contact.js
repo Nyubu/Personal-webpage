@@ -47,7 +47,7 @@ class Contact extends React.Component {
         // Send data express backend
         axios({
             method: "POST", 
-            url:"http://localhost:3000/express_backend",
+            url:"http://134.209.172.207:3000/express_backend",
             headers: { 'Content-Type': 'application/json' },
             data: JSON.stringify({
                 messengerName,  
