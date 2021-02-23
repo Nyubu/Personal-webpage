@@ -3,6 +3,7 @@
     background-color: var(--clr-dark);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./tools-bg.jpg);
     background-size: cover;
+    
 }
 
 .section__title--tools {    
@@ -41,7 +42,15 @@
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 25px;
     margin: 0 auto;
-    width: 65%
+    width: 1400px;
+}
+
+@media(max-width: 1490px) {
+
+    .tools-wrapper {
+        width: auto;
+    }
+
 }
 
 .tools {
@@ -107,14 +116,49 @@
     object-fit: cover;
 }
 
-.databases-wrapper {
-    width: 50%;
+
+
+@media(min-width: 440px) {
+    
+    .tools-row {
+        display: flex;
+    }
+
+    .databases-wrapper {
+        width: 50%;
+    }
+    
+    .frameworks-wrapper {
+        width: 50%;
+    }
+
+    
 }
 
-.frameworks-wrapper {
-    width: 50%;
-}
+@media(max-width: 440px) {
 
-.tools-row {
-    display: flex;
+    .tools {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        justify-items: center;
+        gap: 1em;
+        padding: 1em 2em 0;
+    
+    }
+
+    .tool__img-wrapper {    
+        border-radius: 100%;   
+        height: 50px;
+        width: 50px;
+        background-color: var(--clr-dark);
+        overflow: hidden;   
+    }
+    
+    .tool__img {
+        border-radius: 50%;
+        margin: 6.25px auto;
+        height: 37.5px;
+        width: 37.5px;
+        object-fit: cover;
+    }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Tools.css'
+import ToolWrapper from './ToolWrapper'
 import java_logo from './tools-img/java-logo.png'
 import htmlcss_logo from './tools-img/htmlcss-logo.png'
 import javascript_logo from './tools-img/javascript-logo.png'
@@ -15,6 +16,15 @@ import jenkins_logo from './tools-img/jenkins-logo.png'
 import vscode_logo from './tools-img/vscode-logo.png'
 import netbeans_logo from './tools-img/netbeans-logo.png'
 import git_logo from './tools-img/git-logo.png'
+import graphql_logo from './tools-img/graphql-logo.png'
+import docker_logo from './tools-img/docker-logo.png'
+import redis_logo from './tools-img/redis-logo.png'
+import urql_logo from './tools-img/urql-logo.png'
+import typegraphql_logo from './tools-img/typegraphql-logo.png'
+import typeorm_logo from './tools-img/typeorm-logo.png'
+import typescript_logo from './tools-img/typescript-logo.png'
+import nodejs_logo from './tools-img/nodejs-logo.png'
+import nextjs_logo from './tools-img/nextjs-logo.png'
 
 function Tools() {
 
@@ -45,6 +55,12 @@ function Tools() {
                     </div>
                     <div className="tool">
                         <div className="tool__img-wrapper">
+                            <img className="tool__img" src={typescript_logo} alt="typescript logo" />
+                        </div>
+                        <p className="tool__name">Typescript</p>
+                    </div>
+                    <div className="tool">
+                        <div className="tool__img-wrapper">
                             <img className="tool__img" src={htmlcss_logo} alt="html/css logo" />
                         </div>
                         <p className="tool__name">HTML & CSS</p>
@@ -55,6 +71,7 @@ function Tools() {
                         </div>
                         <p className="tool__name">SQL</p>
                     </div>
+                    <ToolWrapper tooltip="This is a tooltip" title="GraphQL" logo={graphql_logo}/>
                 </div>
                 <div className="tools-row">
                     <div className="databases-wrapper">
@@ -89,10 +106,49 @@ function Tools() {
                                 </div>
                                 <p className="tool__name">Flask</p>
                             </div>
+                            <div className="tool">
+                                <div className="tool__img-wrapper">
+                                    <img className="tool__img" src={nextjs_logo} alt="next.js logo" />
+                                </div>
+                                <p className="tool__name">Next.js</p>
+                            </div>
+                            <div className="tool">
+                                <div className="tool__img-wrapper">
+                                    <img className="tool__img" src={nodejs_logo} alt="nodejs logo" />
+                                </div>
+                                <p className="tool__name">Express.js</p>
+                            </div>
                         </div>            
                     </div>                
                 </div>
-                <h2 className="section__subtitle section__subtitle--tools">Utility Programs</h2> 
+                <h2 className="section__subtitle section__subtitle--tools">Libraries</h2> 
+                <div className="tools tools-programs">                    
+                    <div className="tool">
+                        <div className="tool__img-wrapper">
+                            <img className="tool__img" src={typegraphql_logo} alt="typegraphql logo" />
+                        </div>
+                        <p className="tool__name">TypeGraphQL</p>
+                    </div>
+                    <div className="tool">
+                        <div className="tool__img-wrapper">
+                            <img className="tool__img" src={redis_logo} alt="redis logo" />
+                        </div>
+                        <p className="tool__name">Redis</p>
+                    </div>
+                    <div className="tool">
+                        <div className="tool__img-wrapper">
+                            <img className="tool__img" src={typeorm_logo} alt="typeorm logo" />
+                        </div>
+                        <p className="tool__name">Typeorm</p>
+                    </div>
+                    <div className="tool">
+                        <div className="tool__img-wrapper">
+                            <img className="tool__img" src={urql_logo} alt="urql logo" />
+                        </div>
+                        <p className="tool__name">URQL</p>
+                    </div>
+                </div>
+                <h2 className="section__subtitle section__subtitle--tools">Utility</h2> 
                 <div className="tools tools-programs">                    
                     <div className="tool">
                         <div className="tool__img-wrapper">
@@ -117,6 +173,12 @@ function Tools() {
                             <img className="tool__img" src={jenkins_logo} alt="jenkins logo" />
                         </div>
                         <p className="tool__name">Jenkins</p>
+                    </div>
+                    <div className="tool">
+                        <div className="tool__img-wrapper">
+                            <img className="tool__img" src={docker_logo} alt="docker logo" />
+                        </div>
+                        <p className="tool__name">Docker</p>
                     </div>
                     <div className="tool">
                         <div className="tool__img-wrapper">
