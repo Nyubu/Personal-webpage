@@ -64,12 +64,16 @@
 
 /* -------- BLOG POSTS --------- */
 .blog-posts {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-column: 4;
-    grid-column-gap: 0px;
-    grid-row-gap: 40px;
-    justify-items: center;
+    
+    display: grid;      
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.blog-post__wrapper {
+    border-radius: 25px;
+    height: 200px;
+    width: 800px;
+    margin: 0 auto 2em;
 }
 
 .blog-post__link {
@@ -79,16 +83,60 @@
 .blog-post {
     position: relative;
     border-radius: 25px;
-    height: 325px;
-    min-width: 400px;
-    max-width: 400px;
+    height: 200px;
+    width: 800px;
+    
     background-color: rgb(0,0,0, 0.8);   
     box-shadow: 5px 10px rgb(0,0,0, 0.3);
+    
+    
 
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 150ms linear;
 }
+
+
+@media(max-width: 895px) {
+    .blog-post__wrapper {
+        width: 100%;
+    }
+
+    .blog-post {
+        width: 100%;
+    }
+}
+
+@media(max-width: 675px) {
+    .blog-post__wrapper {
+        height: 220px;
+    }
+
+    .blog-post {
+        height: 220px;
+    }
+}
+
+@media(max-width: 600px) {
+    .blog-post__wrapper {
+        height: 250px;
+    }
+
+    .blog-post {
+        height: 250px;
+    }
+}
+
+@media(max-width: 500px) {
+    .blog-post__wrapper {
+        height: 320px;
+    }
+
+    .blog-post {
+        height: 320px;
+    }
+}
+
 
 
 .blog-post:hover {
@@ -97,37 +145,43 @@
 }
 
 .blog-post__header {
-    display: flex;
-    padding: 20px 20px 0px 20px;
+    /* display: flex; */
+    padding: 0px 10px 0px;
+
 }
 
 
 .blog-post__thumbnail-container {
+    float: left;
     border-radius: 15px;
-    margin: 0 auto;
+    margin: 0 20px;
     height: 100px; 
     width: 100px; 
     overflow: hidden;
 }
+
 .blog-post__thumbnail {
     
 }
+
 .blog-post__title {
+    padding-top: 0.6em;
     margin: 0 auto;
     width: 70%;
-    padding-left: 1em;
     color: var(--clr-accent);
     text-align: center;
 }
 .blog-post__content {
     position: relative;
+    padding: 0 1em 1em;
     padding-left: 1em;
     padding-right: 1em;
     color: white;
 
     
 }
-.blog-post__content::after {    
+
+/* .blog-post__header::after {    
     content: '';
     display: block;
     width: 100%;
@@ -135,7 +189,7 @@
     margin: 0.5em auto 1em;
     background: var(--clr-light);
     opacity: 0.25em;
-}
+} */
 
 .calendar-icon {
     margin-right: 0.3em;
@@ -153,7 +207,7 @@
 /* ---------- BLOG PAGINATION ------- | Documentation: https://www.npmjs.com/package/react-paginate */
 .blog-pagination {    
     font-size: var(--fs-h3);    
-    margin: 3em auto 0 auto;
+    margin: 1em auto 0 auto;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -176,9 +230,7 @@
     border-color: var(--clr-accent);
     color: white;
 }
-.blog-pagination__prev { 
-    
-}
+
 .blog-pagination__prev:hover { /* Hovering over next button */
     background-color: var(--clr-accent) ;
     

@@ -59,18 +59,20 @@ class Blog extends React.Component {
                
                 const slice = posts.slice(this.state.offset, this.state.offset + this.state.perPage)
                 const postData = slice.map( (post, index) => 
-                    <a className="blog-post__link" href={post.link} target="_blank" key={index}>
-                        <div className="blog-post" >
-                            <div className="blog-post__header">
-                                <div className="blog-post__thumbnail-container">
-                                    <img className="blog-post__thumbnail"src={post.thumbnail} alt="post thumbnail"/>
-                                </div>
+                    <div className="blog-post__wrapper">
+                        <a className="blog-post__link" href={post.link} target="_blank" key={index}>
+                            <div className="blog-post" >
                                 <h3 className="blog-post__title">{post.title}</h3>
+                                <div className="blog-post__header">
+                                    <div className="blog-post__thumbnail-container">
+                                        <img className="blog-post__thumbnail"src={post.thumbnail} alt="post thumbnail"/>
+                                    </div>
+                                    <p className="blog-post__content">&emsp;{shortenText(toText(post.content), 0, 200)}...</p>
+                                </div>
+                                <span className="blog-post__date"><FontAwesomeIcon className="calendar-icon" icon={faCalendarAlt} />{shortenText(post.pubDate,0 ,10)}</span>
                             </div>
-                            <p className="blog-post__content">&emsp;{shortenText(toText(post.content), 0, 200)}...</p>
-                            <span className="blog-post__date"><FontAwesomeIcon className="calendar-icon" icon={faCalendarAlt} />{shortenText(post.pubDate,0 ,10)}</span>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 )                
 
                 this.setState({ 
@@ -147,6 +149,7 @@ class Blog extends React.Component {
                     subContainerClassName={"pages pagination"}
                     
                 />
+                
             </section>                        
         );
   }
