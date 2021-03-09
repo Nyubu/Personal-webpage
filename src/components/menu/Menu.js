@@ -10,7 +10,7 @@ import Tools from '../tools/Tools';
 import Blog from '../blog/Blog';
 import Projects from '../projects/Projects';
 import Contact from '../contact/Contact';
-import Notes from '../notes/Notes';
+// import Notes from '../notes/Notes';
 
 function Menu() {
     return (
@@ -43,12 +43,12 @@ function Menu() {
                     <Blog />   
                     
                 </Tab>
-
+{/* 
                 <Tab eventKey="notes" title="Notes">
 
                     <Notes />
                     
-                </Tab>
+                </Tab> */}
 
                 <Tab eventKey="contact" title="Contact">
 

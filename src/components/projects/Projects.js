@@ -14,24 +14,15 @@ function Projects() {
         <section className="section--projects" id="work">
             <h2 className="section__title--projects">My Work</h2>
             <p className="section__subtitle section__subtitle--projects">A selection of my range of work</p>
-
             <div className="projects">
-                {/* Portfolio item 01 */}
-                <div className="project-container">
-                    <a href="#" target="blank" className="project">
-                        <img src={project_img1} alt="" className="project__img"/>
-                        <h3 className="project__title">Elegant Glass Website</h3>                                                                     
-                        <p className="project__tools">HTML & CSS</p>   
-                    </a>
-                </div>
-                {/* Portfolio item 02 */}
+                
                 <div className="project-container">
                     <a href="#" target="blank" className="project">
                         <img src={project_img2} alt="" className="project__img"/>
-                        <h3 className="project__title">Project title</h3>
-                        <p className="project__tools">HTML & CSS</p>   
+                        <h3 className="project__title">E-Commerce Website</h3>
+                        <p className="project__tools">Full-stack React, Postgres</p>   
                     </a>
-                {/* Portfolio item 03 */}</div>
+                </div>
                 <div className="project-container">
                     <a href="https://github.com/Nyubu/flask-blog"  target="blank" className="project">
                         <img src={project_img3} alt="" className="project__img"/>
@@ -39,28 +30,39 @@ function Projects() {
                         <p className="project__tools">Python, Flask, Sqlite</p>   
                     </a>
                 </div>
-                {/* Portfolio item 04 */}
                 <div className="project-container">
                     <a href="#" target="blank" className="project">
                         <img src={project_img4} alt="" className="project__img"/>
-                        <h3 className="project__title">Project title</h3>
-                        <p className="project__tools">HTML & CSS</p>   
+                        <h3 className="project__title">"Reddit" Forum</h3>
+                        <p className="project__tools">Full-stack React, Postgres</p>   
                     </a>
                 </div>
-                {/* Portfolio item 05 */}
-                <div className="project-container">
-                    <a href="#" target="blank" className="project">
-                        <img src={project_img5} alt="" className="project__img"/>
-                        <h3 className="project__title">Project title</h3>
-                        <p className="project__tools">HTML & CSS</p>   
-                    </a>
-                </div>
-                {/* Portfolio item 06 */}
                 <div className="project-container">
                     <a href="#" target="blank" className="project">
                         <img src={project_img6} alt="" className="project__img"/>
-                        <h3 className="project__title">Project title</h3>
+                        <h3 className="project__title">Financial Dashboard</h3>
+                        <p className="project__tools">Full-stack React, MongoDB</p>   
+                    </a>
+                </div>
+                <div className="project-container">
+                    <a href="#" target="blank" className="project">
+                        <img src={project_img6} alt="" className="project__img"/>
+                        <h3 className="project__title">Personal Page</h3>
+                        <p className="project__tools">React, Javascript, Express</p>   
+                    </a>
+                </div>
+                <div className="project-container">
+                    <a href="#" target="blank" className="project">
+                        <img src={project_img1} alt="" className="project__img"/>
+                        <h3 className="project__title">Elegant Glass Website</h3>                                                                     
                         <p className="project__tools">HTML & CSS</p>   
+                    </a>
+                </div>
+                <div className="project-container">
+                    <a href="#" target="blank" className="project">
+                        <img src={project_img5} alt="" className="project__img"/>
+                        <h3 className="project__title">React Todo</h3>
+                        <p className="project__tools">React, Javascript</p>   
                     </a>
                 </div>
             </div>

@@ -86,8 +86,8 @@
     height: 200px;
     width: 800px;
     
-    background-color: rgb(0,0,0, 0.8);   
-    box-shadow: 5px 10px rgb(0,0,0, 0.3);
+    background-color: var(--clr-dark);
+    box-shadow: 5px 10px 20px rgb(0,0,0, 0.5);
     
     
 
@@ -141,7 +141,7 @@
 
 .blog-post:hover {
     -webkit-transition: -webkit-transform .5s ease;
-    -webkit-transform: scale(1.05,1.05);
+    -webkit-transform: scale(1.02,1.02);
 }
 
 .blog-post__header {

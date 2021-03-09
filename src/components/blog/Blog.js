@@ -59,8 +59,8 @@ class Blog extends React.Component {
                
                 const slice = posts.slice(this.state.offset, this.state.offset + this.state.perPage)
                 const postData = slice.map( (post, index) => 
-                    <div className="blog-post__wrapper">
-                        <a className="blog-post__link" href={post.link} target="_blank" key={index}>
+                    <div key={index} className="blog-post__wrapper">
+                        <a className="blog-post__link" href={post.link} target="_blank" >
                             <div className="blog-post" >
                                 <h3 className="blog-post__title">{post.title}</h3>
                                 <div className="blog-post__header">
