@@ -94,11 +94,12 @@ hr.rounded {
 }
 
 .tool[data-tool-tip] {
-    
     position: relative;
 }
 
 .tool[data-tool-tip]::after {
+    z-index: 3;
+
     content: attr(data-tool-tip);
     position: absolute;
     display: block;
@@ -106,6 +107,7 @@ hr.rounded {
     color: white;
     border-radius: 7px;
     padding: 1em 1.5em;
+    width: 380%;
     bottom: 0;
     transform: scale(0);
     transition: 
