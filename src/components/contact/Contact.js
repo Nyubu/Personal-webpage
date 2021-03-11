@@ -7,9 +7,9 @@ import Modal from 'react-modal';
 // import customStyles from './ModalStyles'
 import githubLogo from './logos/github-logo.png';
 import linkedinLogo from './logos/linkedin-logo.png';
-import pinterestLogo from './logos/pinterest-logo.png';
-import youtubeLogo from './logos/youtube-logo.png';
-import twitterLogo from './logos/twitter-logo.png';
+// import pinterestLogo from './logos/pinterest-logo.png';
+// import youtubeLogo from './logos/youtube-logo.png';
+// import twitterLogo from './logos/twitter-logo.png';
 
 class Contact extends React.Component {
     constructor(props) {
@@ -72,8 +72,8 @@ class Contact extends React.Component {
         // Send data express backend
         axios({
             method: "POST", 
-            // url:"http://134.209.172.207:5000/express_backend",
-            url:"http://134.209.sghsghsgh000/express_backend",
+            url:"http://134.209.172.207:5000/express_backend",
+            // url:"http://134.209.sghsghsgh000/express_backend",
             // url:"localhost:5000/express_backend",
             headers: { 'Content-Type': 'application/json' },
             data: JSON.stringify({
@@ -114,6 +114,7 @@ class Contact extends React.Component {
                             name="messengerName" 
                             value={this.state.messengerName} 
                             onChange={this.handleChange} 
+                            required
                         />
                         <input 
                             className="contact-form__text contact-form__contact"
@@ -130,6 +131,7 @@ class Contact extends React.Component {
                             name="subject"  
                             value={this.state.subject} 
                             onChange={this.handleChange} 
+                            required
                         />
                         <textarea
                             className="contact-form__text contact-form__message"
@@ -138,6 +140,7 @@ class Contact extends React.Component {
                             name="message" 
                             value={this.state.message} 
                             onChange={this.handleChange} 
+                            required
                         >                    
                         </textarea>
                         <input className="contact-form__submit-btn" type="submit" value="Send Message" />
@@ -177,7 +180,15 @@ class Contact extends React.Component {
                             </li>
                         </ul>
                         <div className="contact-list-wrapper">
-                            <a  className="contact-link" href="https://youtube.com" target="blank">    
+                            <a  className="contact-link" href="https://www.linkedin.com/in/jeff-huynh-3926451aa/" target="blank">
+                                <img src={linkedinLogo} className="contact-logo" alt="linkedin logo"/>
+                                <p className="contact-name">Linkedin</p>
+                            </a>
+                            <a  className="contact-link" href="https://github.com/nyubu" target="blank">
+                                <img src={githubLogo} className="contact-logo" alt="github logo"/>
+                                <p className="contact-name">Github</p>
+                            </a>
+                            {/* <a  className="contact-link" href="https://youtube.com" target="blank">    
                                 <img src={youtubeLogo} className="contact-logo" alt="something"/>
                                 <p className="contact-name">Youtube</p>
                             </a>
@@ -188,15 +199,7 @@ class Contact extends React.Component {
                             <a  className="contact-link" href="https://twitter.com" target="blank">
                                 <img src={twitterLogo} className="contact-logo" alt="twitter logo"/>
                                 <p className="contact-name">Twitter</p>
-                            </a>
-                            <a  className="contact-link" href="https://linkedin.com" target="blank">
-                                <img src={linkedinLogo} className="contact-logo" alt="linkedin logo"/>
-                                <p className="contact-name">Linkedin</p>
-                            </a>
-                            <a  className="contact-link" href="https://github.com" target="blank">
-                                <img src={githubLogo} className="contact-logo" alt="github logo"/>
-                                <p className="contact-name">Github</p>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
 

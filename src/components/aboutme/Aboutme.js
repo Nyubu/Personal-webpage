@@ -1,6 +1,7 @@
 import React from 'react'
 import './Aboutme.css'
-import aboutme_picture from './dev-sam-aboutme.jpg';
+// import aboutme_picture from './dev-sam-aboutme.jpg';
+// import aboutme_picture from './profile4.jpg';
 
 function Aboutme() {
 
@@ -10,17 +11,15 @@ function Aboutme() {
             <p className="section__subtitle section__subtitle--about">Developer based in Dallas, TX</p>
 
             <div className="about-me__body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat.</p>
+                <p>I am a full-stack developer from Dallas, TX. I studied software engineering and mathematics from the University of Texas
+                    at Dallas. I am both driven and self-motivated, and I am constantly experimenting with new technologies and techniques.
+                </p>
+                <p> 
+                    I am very passionate about Web Development, and strive to better myself as a developer, and the development community as a whole.
+                    When I'm not programming, I enjoy learning to speak new languages and practicing guitar.</p>
             </div>
 
-            <img src={aboutme_picture} alt="Sam smiling" className="about-me__img"/>
+            {/* <img className="about-me__img"/> */}
         </section>
     )
 }

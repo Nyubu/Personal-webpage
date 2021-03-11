@@ -1,7 +1,7 @@
 .my-services {
     /* darken background */
     background-color: var(--clr-dark);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./services-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(./services-bg.jpg);
     
     background-size: cover;
     color: var(--clr-light);
@@ -9,6 +9,7 @@
 }
 
 .section__title--services {
+    font-size: var(0.5em);
     color: var(--clr-accent);
     position: relative;
 }
@@ -23,21 +24,40 @@
     opacity: 0.25em;
 }
 
+.subsection__title--services::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 1px;
+    margin: 0.5em auto 0.5em;
+    background: var(--clr-light);
+    opacity: 0.25em;
+}
+
 .services {
-    margin-bottom: 4em;
+    font-weight: bold;
+    
 }
 
 .service {
-    max-width: 500px; /* adjust text width */
+    margin-bottom: 3em !important;
+    max-width: 400px;
     margin: 0 auto; /* keeps it centered */
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     .services {
+        margin-top: 5em;
         display: flex;
-        max-width: 1000px; /* bit a guess */
+        max-width: 1200px; /* bit a guess */
         margin-left: auto;        
         margin-right: auto;        
+    }
+
+    .service {
+        font-size: 1.1rem;
+        margin-top: 0;
+        max-width:30%;
     }
 
     .service + .service {

@@ -16,8 +16,8 @@ function Tools() {
                     </div>
                     <div className="tools-row">
                         {
-                            languages.map((lang) => (
-                                <ToolWrapper tooltip={lang.tooltip} title={lang.title} logo={lang.logo}/>
+                            languages.map((lang, index) => (
+                                <ToolWrapper key={index} tooltip={lang.tooltip} title={lang.title} logo={lang.logo}/>
                             ))
                         }
                     </div>
@@ -30,8 +30,8 @@ function Tools() {
                     </div>
                     <div className="tools-row">
                         {
-                            frameworks.map((lang) => (
-                                <ToolWrapper tooltip={lang.tooltip} title={lang.title} logo={lang.logo}/>
+                            frameworks.map((f, index) => (
+                                <ToolWrapper key={index} tooltip={f.tooltip} title={f.title} logo={f.logo}/>
                             ))
                         }
                     </div>
@@ -43,8 +43,8 @@ function Tools() {
                     </div>
                     <div className="tools-row">
                         {
-                            libraries.map((lang) => (
-                                <ToolWrapper tooltip={lang.tooltip} title={lang.title} logo={lang.logo}/>
+                            libraries.map((lib, index) => (
+                                <ToolWrapper key={index} tooltip={lib.tooltip} title={lib.title} logo={lib.logo}/>
                             ))
                         }
                     </div>
@@ -57,8 +57,8 @@ function Tools() {
                     <div className="tools-row">
 
                         {
-                            databases.map((lang) => (
-                                <ToolWrapper tooltip={lang.tooltip} title={lang.title} logo={lang.logo}/>
+                            databases.map((db, index) => (
+                                <ToolWrapper key={index} tooltip={db.tooltip} title={db.title} logo={db.logo}/>
                             ))
                         }
                     </div>
@@ -70,8 +70,8 @@ function Tools() {
                     </div>
                     <div className="tools-row">
                         {
-                            utility.map((lang) => (
-                                <ToolWrapper tooltip={lang.tooltip} title={lang.title} logo={lang.logo}/>
+                            utility.map((util, index) => (
+                                <ToolWrapper key={index} tooltip={util.tooltip} title={util.title} logo={util.logo}/>
                             ))
                         }
                     </div>
