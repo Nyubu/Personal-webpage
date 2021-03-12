@@ -38,27 +38,29 @@
     opacity: .5;
 }
 
-.project__title {
+.project-text {
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    padding: 0.5em 0.5em 0;
+    z-index: 3;
+}
+/* 
+.project__title {
     text-align: right;
 
-    padding: 0.1em 1em 0.1em 0.2em;
 
-    /* Keep at bottom right */
-    position: absolute;
     bottom: 15%;
     right: 0px;
 }
+*/
 
 .project__tools {
-    color: white;
-    background-color: black;
-    padding: 0.1em 1em 0.1em 0.3em;
-    position: absolute;
-    bottom: 0px;
-    right: 0px
-}
+    margin-top: 0;
+    margin-bottom: 0.5em;
+} 
 
 .project__img {
     height: 100%;

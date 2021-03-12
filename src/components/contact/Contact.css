@@ -134,6 +134,7 @@ textarea::placeholder {
     border:1px solid transparent;
     background-color: var(--clr-accent);
     letter-spacing: 1px;
+    -webkit-appearance: none;
     transition: transform 100ms ease-in-out;
 }
 

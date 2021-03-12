@@ -79,7 +79,7 @@
 hr.rounded {
     width: 95%;
     border-top: 1px solid #bbb;
-    opacity: 25%;
+    opacity: 25% !important;
     border-radius: 5px;
 }
 
