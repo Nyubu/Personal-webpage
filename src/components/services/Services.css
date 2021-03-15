@@ -1,7 +1,7 @@
 .my-services {
     /* darken background */
     background-color: var(--clr-dark);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(./services-bg.jpg);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(./services-bg.jpg); */
     
     background-size: cover;
     color: var(--clr-light);

@@ -24,6 +24,7 @@ function Services() {
                     </p>
                 </div>
             </div>
+            <hr style={{marginBottom: 0, width: "80%"}}className="rounded"></hr>
         </section>
     )
 }

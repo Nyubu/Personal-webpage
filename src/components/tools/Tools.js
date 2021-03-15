@@ -7,7 +7,8 @@ function Tools() {
 
     return (
         <section className="my-tools" id="my-tools">
-            <h2 className="section__title section__title--tools">Tools</h2>                                
+            <h2 className="section__title section__title--tools">Tools</h2>     
+            <p className="tools-advice">*Hover on an item for more information</p>                           
             
             <div className="tools-wrapper">
                 <div className="tools tools-languages">
