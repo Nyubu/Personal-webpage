@@ -1,7 +1,7 @@
 import React from 'react'
 import './Introduction.css'
 // import profile_picture from './dev-sam-intro.jpg';
-import profile_picture from './profile2.jpg';
+import profile_picture from './dev-sam-intro.jpg';
 
 function Introduction() {
 

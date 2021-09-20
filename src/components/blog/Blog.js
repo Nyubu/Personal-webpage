@@ -121,6 +121,8 @@ class Blog extends React.Component {
                         </a>
                     </p>  
                 </div>
+
+                {/* <p className="blog-advice">*This may or may not be a while as the medium API is rather slow at times.</p> */}
                 
 
                 <div className="blog-posts">

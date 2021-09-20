@@ -6,10 +6,10 @@ import axios from 'axios';
 import Modal from 'react-modal';
 // import customStyles from './ModalStyles'
 import githubLogo from './logos/github-logo.png';
-import linkedinLogo from './logos/linkedin-logo.png';
+// import linkedinLogo from './logos/linkedin-logo.png';
 // import pinterestLogo from './logos/pinterest-logo.png';
-// import youtubeLogo from './logos/youtube-logo.png';
-// import twitterLogo from './logos/twitter-logo.png';
+import youtubeLogo from './logos/youtube-logo.png';
+import twitterLogo from './logos/twitter-logo.png';
 
 class Contact extends React.Component {
     constructor(props) {
@@ -180,26 +180,26 @@ class Contact extends React.Component {
                             </li>
                         </ul>
                         <div className="contact-list-wrapper">
-                            <a  className="contact-link" href="https://www.linkedin.com/in/jeff-huynh-3926451aa/" target="blank">
+                            {/* <a  className="contact-link" href="https://www.linkedin.com/in/jeff-huynh-3926451aa/" target="blank">
                                 <img src={linkedinLogo} className="contact-logo" alt="linkedin logo"/>
                                 <p className="contact-name">Linkedin</p>
-                            </a>
+                            </a> */}
                             <a  className="contact-link" href="https://github.com/nyubu" target="blank">
                                 <img src={githubLogo} className="contact-logo" alt="github logo"/>
                                 <p className="contact-name">Github</p>
                             </a>
-                            {/* <a  className="contact-link" href="https://youtube.com" target="blank">    
+                            <a  className="contact-link" href="https://www.youtube.com/channel/UCqQziku0QE8A0_UMlEQX2eA" target="blank">    
                                 <img src={youtubeLogo} className="contact-logo" alt="something"/>
                                 <p className="contact-name">Youtube</p>
                             </a>
-                            <a  className="contact-link" href="https://pinterest.com" target="blank">
+                            {/* <a  className="contact-link" href="https://pinterest.com" target="blank">
                                 <img src={pinterestLogo} className="contact-logo" alt="pinterest logo"/>
                                 <p className="contact-name">Pinterest</p>
-                            </a>
-                            <a  className="contact-link" href="https://twitter.com" target="blank">
+                            </a> */}
+                            <a  className="contact-link" href="https://twitter.com/TeaWithSammie" target="blank">
                                 <img src={twitterLogo} className="contact-logo" alt="twitter logo"/>
                                 <p className="contact-name">Twitter</p>
-                            </a> */}
+                            </a>
                         </div>
                     </div>
 
