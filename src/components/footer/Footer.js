@@ -1,8 +1,9 @@
+import { faGamepad } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 import './Footer.css'
 
 function Footer() {
-
+    console.log("hello")
     return (
         <footer className="footer">
             <a href="mailto:huynh5851@gmail.com" className="footer__link">huynh5851@gmail.com</a>
